@@ -1,0 +1,17 @@
+@import "../_variables.scss";
+
+.text-xlarge, h1{
+  font-size: $font-size-xlarge;
+}
+.text-large, h2{
+  font-size: $font-size-large;
+}
+.text-medium, p, span, a{
+  font-size: $font-size-medium;
+}
+.text-small, address > span{
+  font-size: $font-size-small;
+}
+.text-xsmall, small{
+  font-size: $font-size-xsmall;
+}

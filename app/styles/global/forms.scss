@@ -1,0 +1,12 @@
+@import "../_variables.scss";
+@import "../_mixins.scss";
+
+input, textarea {
+  background-color: transparent;
+  border-color: $color-teal !important;
+
+  @include placeholder {
+    color: $color-teal;
+  }
+  resize: none;
+}

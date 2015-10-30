@@ -1,0 +1,134 @@
+@import "../_variables.scss";
+
+.off-white{
+  &-background{
+    background-color: $color-off-white;
+  }
+  &-text{
+    color: $color-off-white;
+    h1, h2, h3, a{
+      color: $color-off-white;
+    }
+  }
+}
+.red{
+  &-background{
+    background-color: $color-red;
+  }
+  &-text{
+    color: $color-red;
+    h1, h2, h3, a{
+      color: $color-red;
+    }
+  }
+}
+.light-blue{
+  &-background{
+    background-color: $color-light-blue;
+  }
+  &-text{
+    color: $color-light-blue;
+    h1, h2, h3, a{
+      color: $color-light-blue;
+    }
+  }
+}
+.dark-grey{
+  &-background{
+    background-color: $color-dark-grey;
+  }
+  &-text{
+    color: $color-dark-grey;
+    h1, h2, h3, a{
+      color: $color-dark-grey;
+    }
+  }
+}
+.dark-blue{
+  &-background{
+    background-color: $color-dark-blue;
+  }
+  &-text{
+    color: $color-dark-blue;
+    h1, h2, h3, a{
+      color: $color-dark-blue;
+    }
+  }
+}
+.yellow{
+  &-background{
+    background-color: $color-yellow;
+  }
+  &-text{
+    color: $color-yellow;
+    h1, h2, h3, a{
+      color: $color-yellow;
+    }
+  }
+}
+.black{
+  &-background{
+    background-color: $color-black;
+  }
+  &-text{
+    color: $color-black;
+    h1, h2, h3, a{
+      color: $color-black;
+    }
+  }
+}
+.pink{
+  &-background{
+    background-color: $color-pink;
+  }
+  &-text{
+    color: $color-pink;
+    h1, h2, h3, a{
+      color: $color-pink;
+    }
+  }
+}
+.navy-blue{
+  &-background{
+    background-color: $color-navy-blue;
+  }
+  &-text{
+    color: $color-navy-blue;
+    h1, h2, h3, a{
+      color: $color-navy-blue;
+    }
+  }
+}
+.light-grey{
+  &-background{
+    background-color: $color-light-grey;
+  }
+  &-text{
+    color: $color-light-grey;
+    h1, h2, h3, a{
+      color: $color-light-grey;
+    }
+  }
+}
+.grey-blue{
+  &-background{
+    background-color: $color-grey-blue;
+  }
+  &-text{
+    color: $color-grey-blue;
+    h1, h2, h3, a{
+      color: $color-grey-blue;
+    }
+  }
+}
+.teal{
+  &-background{
+    background-color: $color-teal;
+  }
+  &-text{
+    color: $color-teal;
+    h1, h2, h3, a, input{
+      color: $color-teal;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+// Breakpoints
+// @include respond-to(xs){ content };
+
+$break-xs: 758px;
+$break-sm: 758px;
+$break-md: 992px;
+$break-lg: 1200px;
+$break-xl: 1600px;
+
+@mixin respond-to($media) {
+  @if $media == xs {
+    @media only screen and (max-width: $break-xs) { @content; }
+  }
+  @else if $media == sm {
+    @media only screen and (min-width: $break-sm + 1) and (max-width: $break-md - 1) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: $break-md + 1) and (max-width: $break-lg - 1) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: $break-lg) { @content; }
+  }
+  @else if $media == xl {
+    @media only screen and (min-width: $break-xl) { @content; }
+  }
+  @else if $media == gt-xs {
+    @media only screen and (min-width: $break-xs) { @content; }
+  }
+  @else if $media == gt-md {
+    @media only screen and (min-width: $break-md + 1) { @content; }
+  }
+}
+
+// CSS Animation Tranform
+// @include animation-transform(180);
+@mixin animation-transform($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+  transform: rotate($deg);
+}
+
+
+// Input Placeholder Text
+// input {
+//   @include placeholder {
+//     font-family: $base-font-family;
+//     color: red;
+//   }
+// }
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}
