@@ -1,5 +1,8 @@
 @import "../_variables.scss";
-
+html, body{
+  font-family: "Open Sans";
+  font-size: $font-size-small;
+}
 .text-xlarge, h1{
   font-size: $font-size-xlarge;
 }
@@ -14,4 +17,7 @@
 }
 .text-xsmall, small{
   font-size: $font-size-xsmall;
+}
+.font-cardo{
+  font-family: "Cardo";
 }

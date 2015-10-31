@@ -1,4 +1,10 @@
 @import "../_variables.scss";
+html, body, a{
+  color: $color-dark-grey;
+  &:hover{
+    color: $color-dark-grey;
+  }
+}
 
 .off-white{
   &-background{
