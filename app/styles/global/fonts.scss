@@ -23,6 +23,9 @@ html, body{
 }
 .font-cardo{
   font-family: 'Open Sans', sans-serif;
+  &-bold{
+    font-weight: 700;
+  }
 }
 .font-source{
   font-family: 'Source Sans Pro', sans-serif;
