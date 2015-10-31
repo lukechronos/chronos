@@ -25,6 +25,7 @@ ul{
   color: #000;
   padding: 0.2em 0;
 }
+
 //Containers
 @include respond-to(xs){
   .container {
@@ -57,8 +58,19 @@ ul{
 .border-right{border: none;border-right: 1px solid #fff;}
 
 // Text
+.underline{
+  text-decoration: underline;
+  &:hover{
+    text-decoration: underline;
+  }
+}
 @include respond-to(xs){
   .xs-text-center{
     text-align: center;
   }
 };
+
+// Cursor
+.cursor-pointer{
+  cursor: pointer;
+}

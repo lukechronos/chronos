@@ -5,37 +5,42 @@ html, body, a{
     color: $color-dark-grey;
   }
 }
+.black{
+  &-background{
+    background-color: #000;
+  }
+  &-text{
+    color: #000;
+    h1, h2, h3, a{
+      color: #000;
+    }
+  }
+  &-hover{
+    &:hover{
+      color: #000;
+      li{
+        color: #000;
+      }
+    }
+  }
+}
 
-.off-white{
+.darker-grey{
   &-background{
-    background-color: $color-off-white;
+    background-color: $color-darker-grey;
   }
   &-text{
-    color: $color-off-white;
-    h1, h2, h3, a{
-      color: $color-off-white;
+    color: $color-darker-grey;
+    h1, h2, h3{
+      color: $color-darker-grey;
     }
   }
-}
-.red{
-  &-background{
-    background-color: $color-red;
-  }
-  &-text{
-    color: $color-red;
-    h1, h2, h3, a{
-      color: $color-red;
-    }
-  }
-}
-.light-blue{
-  &-background{
-    background-color: $color-light-blue;
-  }
-  &-text{
-    color: $color-light-blue;
-    h1, h2, h3, a{
-      color: $color-light-blue;
+  &-hover{
+    &:hover{
+      color: $color-darker-grey;
+      li{
+        color: $color-darker-grey;
+      }
     }
   }
 }
@@ -45,63 +50,30 @@ html, body, a{
   }
   &-text{
     color: $color-dark-grey;
-    h1, h2, h3, a{
+    h1, h2, h3{
       color: $color-dark-grey;
     }
   }
 }
-.dark-blue{
+.middle-grey{
   &-background{
-    background-color: $color-dark-blue;
+    background-color: $color-middle-grey;
   }
   &-text{
-    color: $color-dark-blue;
-    h1, h2, h3, a{
-      color: $color-dark-blue;
+    color: $color-middle-grey;
+    h1, h2, h3{
+      color: $color-middle-grey;
     }
   }
 }
-.yellow{
+.middle-light-grey{
   &-background{
-    background-color: $color-yellow;
+    background-color: $color-middle-light-grey;
   }
   &-text{
-    color: $color-yellow;
-    h1, h2, h3, a{
-      color: $color-yellow;
-    }
-  }
-}
-.black{
-  &-background{
-    background-color: $color-black;
-  }
-  &-text{
-    color: $color-black;
-    h1, h2, h3, a{
-      color: $color-black;
-    }
-  }
-}
-.pink{
-  &-background{
-    background-color: $color-pink;
-  }
-  &-text{
-    color: $color-pink;
-    h1, h2, h3, a{
-      color: $color-pink;
-    }
-  }
-}
-.navy-blue{
-  &-background{
-    background-color: $color-navy-blue;
-  }
-  &-text{
-    color: $color-navy-blue;
-    h1, h2, h3, a{
-      color: $color-navy-blue;
+    color: $color-middle-light-grey;
+    h1, h2, h3{
+      color: $color-middle-light-grey;
     }
   }
 }
@@ -113,28 +85,6 @@ html, body, a{
     color: $color-light-grey;
     h1, h2, h3, a{
       color: $color-light-grey;
-    }
-  }
-}
-.grey-blue{
-  &-background{
-    background-color: $color-grey-blue;
-  }
-  &-text{
-    color: $color-grey-blue;
-    h1, h2, h3, a{
-      color: $color-grey-blue;
-    }
-  }
-}
-.teal{
-  &-background{
-    background-color: $color-teal;
-  }
-  &-text{
-    color: $color-teal;
-    h1, h2, h3, a, input{
-      color: $color-teal;
     }
   }
 }
