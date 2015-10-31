@@ -1,6 +1,6 @@
 @import "../_variables.scss";
 html, body{
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
   font-size: $font-size-small;
 }
 .text-xlarge, h1{
@@ -19,5 +19,17 @@ html, body{
   font-size: $font-size-xsmall;
 }
 .font-cardo{
-  font-family: "Cardo";
+  font-family: 'Open Sans', sans-serif;
+}
+.font-source{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.font-open{
+  font-family: 'Open Sans', sans-serif;
+  &-semibold{
+    font-weight: 600;
+  }
+  &-bold{
+    font-weight: 700;
+  }
 }
