@@ -17,6 +17,9 @@ html, body{
 }
 .text-xsmall, small{
   font-size: $font-size-xsmall;
+  p, a, h4, span{
+    font-size: $font-size-xsmall;
+  }
 }
 .font-cardo{
   font-family: 'Open Sans', sans-serif;

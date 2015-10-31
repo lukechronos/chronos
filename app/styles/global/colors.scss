@@ -24,6 +24,25 @@ html, body, a{
     }
   }
 }
+.white{
+  &-background{
+    background-color: #fff;
+  }
+  &-text{
+    color: #fff;
+    h1, h2, h3, a{
+      color: #fff;
+    }
+  }
+  &-hover{
+    &:hover{
+      color: #fff;
+      li{
+        color: #fff;
+      }
+    }
+  }
+}
 
 .darker-grey{
   &-background{

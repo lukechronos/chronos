@@ -3,10 +3,15 @@
 
 input, textarea {
   background-color: transparent;
-  border-color: $color-teal !important;
-
+  border-color: #000 !important;
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: #fff;
   @include placeholder {
-    color: $color-teal;
+    color: #fff;
+  }
+  &.btn-default{
+    padding: 8px;
   }
   resize: none;
 }
