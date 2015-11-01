@@ -206,7 +206,7 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the HTML file
     wiredep: {
       app: {
-        src: ['<%= config.app %>/index.html'],
+        src: ['<%= config.app %>/index.html', '<%= config.app %>/about.html', '<%= config.app %>/preorder.html'],
         exclude: ['bootstrap.js'],
         ignorePath: /^(\.\.\/)*\.\./
       },
@@ -236,7 +236,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      html: ['<%= config.app %>/index.html', '<%= config.app %>/about.html', '<%= config.app %>/preorder.html']
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
