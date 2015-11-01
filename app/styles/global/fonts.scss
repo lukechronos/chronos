@@ -3,19 +3,19 @@ html, body{
   font-family: 'Open Sans', sans-serif;
   font-size: $font-size-small;
 }
-.text-xlarge, h1{
+.text-xlarge{
   font-size: $font-size-xlarge;
 }
-.text-large, h2{
+.text-large{
   font-size: $font-size-large;
 }
-.text-medium, p, span, a{
+.text-medium{
   font-size: $font-size-medium;
 }
-.text-small, address > span{
+.text-small{
   font-size: $font-size-small;
 }
-.text-xsmall, small{
+.text-xsmall{
   font-size: $font-size-xsmall;
   p, a, h4, span{
     font-size: $font-size-xsmall;
