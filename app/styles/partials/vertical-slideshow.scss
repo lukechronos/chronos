@@ -1,0 +1,11 @@
+.vertical-slideshow{
+  position: relative;
+  img{
+    &.below{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
