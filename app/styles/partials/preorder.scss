@@ -2,3 +2,31 @@
   padding-top: 200px;
   padding-bottom: 130px;
 }
+
+.product{
+  position: relative;
+  .hover-box{
+    height: 360px;
+    width: 360px;
+    line-height: 360px;
+    text-align: center;
+    position: absolute;
+    color: transparent;
+    background-color: transparent;
+  }
+  .product-hover{
+    &:hover{
+      .hover-box{
+        &.sold-out{
+          color: #fff;
+          background-color: rgba(#000, 0.5);
+
+        }
+        &.buy-now{
+          color: #000;
+          background-color: rgba($color-light-grey, 0.5);
+        }
+      }
+    }
+  }
+}
