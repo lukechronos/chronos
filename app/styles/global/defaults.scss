@@ -41,6 +41,7 @@ ul{
 .full-width{width: 100%}
 // Spacing
 .m-top-20{margin-top: 20px;}
+.m-top-50{margin-top: 50px;}
 .m-btm-20{margin-bottom: 20px;}
 .p-btm-100{padding-bottom: 100px;}
 // Border
@@ -69,4 +70,9 @@ ul{
 // Cursor
 .cursor-pointer{
   cursor: pointer;
+}
+
+// Images
+.max-height-550{
+  max-height: 550px;
 }
