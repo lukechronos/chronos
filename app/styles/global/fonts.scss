@@ -29,6 +29,9 @@ html, body{
 }
 .font-source{
   font-family: 'Source Sans Pro', sans-serif;
+  &-bold{
+    font-weight: 700;
+  }
 }
 .font-open{
   font-family: 'Open Sans', sans-serif;
