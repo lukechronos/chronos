@@ -34,8 +34,8 @@
     <div class="container-fluid">
       <div class="header m-top-20">
         <ul class="nav pull-right inline">
-          <li class="active"><a href="#" class="text-medium font-open-bold">HOME</a></li>
-          <li><a href="#" class="text-medium font-open-bold">PRE-ORDER</a></li>
+          <li class="active"><a href="index.html" class="text-medium font-open-bold">HOME</a></li>
+          <li><a href="preorder.html" class="text-medium font-open-bold">PRE-ORDER</a></li>
         </ul>
         <h1 class="logo">Chronos</h1>
         <h3 class="">
@@ -57,7 +57,7 @@
         </div>
       </section>
       <section class="section row">
-        <div class="col-sm-5 col-sm-offset-1">
+        <div class="col-sm-6">
           <img src="images/about/nichol.jpg" class="full-width" alt="Mark Nichol" />
           <h2 class="text-large black-text font-open-bold uppercase">Mark Nichol - CEO & Founder</h2>
           <p class="middle-grey-text text-medium font-source  m-top-20 line-height-200">
@@ -67,7 +67,7 @@
             <i>Favorite Watch: Rolex GMT</i>
           </p>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-6">
           <img src="images/about/fromowitz.jpg" class="full-width" alt="Luke Fromowitz" />
           <h2 class="text-large black-text font-open-bold uppercase">Luke Fromowitz - CTO & Co-Founder</h2>
           <p class="middle-grey-text text-medium font-source  m-top-20 line-height-200">
@@ -83,7 +83,7 @@
       <a name="faq"></a>
       <div class="container">
         <section class="section faq row">
-          <div class="col-sm-10 col-sm-offset-1">
+          <div class="col-sm-12">
             <h2 class="text-large font-source-bold m-btm-20">FAQ</h2>
             <div class="accordion">
               <h3 class="font-cardo text-large cursor-pointer black-text">Q: Will Chronos fit my watch?</h3>
@@ -236,7 +236,6 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -262,11 +261,12 @@
     <!-- endbuild -->
     <script>
       $(function() {
-        $( ".accordion" ).accordion({
-      		heightStyle: "content",
-      		collapsible: true,
-      		active: false
-      	});
+        jQuery(document).ready(function(){
+          $('.accordion h3').click(function() {
+              $(this).next().toggle();
+              return false;
+          }).next().hide();
+        });
       });
     </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
