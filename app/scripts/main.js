@@ -1,7 +1,3 @@
-$(function(){
-
-});
-
 $("[data-hover~=show-controls]").hover(
   function() {
     $('.carousel-control').show();
