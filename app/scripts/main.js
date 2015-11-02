@@ -16,3 +16,10 @@ $("[data-hover~=change-image").hover(
     $('.app-image').attr("src", "images/home/phone-1.png");
   }
 );
+$("[data-hover~=change-format").hover(
+  function() {
+    $(this).attr("src", $(this).data("image-src") + ".gif");
+  }, function() {
+    $(this).attr("src", $(this).data("image-src") + ".jpg");
+  }
+);
