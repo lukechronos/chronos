@@ -47,6 +47,7 @@ li.indent {
 .inline-block{display: inline-block;}
 //Sizing
 .full-width{width: 100%}
+.half-width{width: 50%}
 // Spacing
 .m-left-8{margin-left: 8px;}
 .m-right-8{margin-right: 8px;}
@@ -94,9 +95,8 @@ li.indent {
 }
 
 // Images
-.max-height-550{
-  max-height: 550px;
-}
+.max-height-550{max-height: 550px;}
+.max-height-600{max-height: 600px;}
 .center-img{
   display: block;
   margin: 0 auto;

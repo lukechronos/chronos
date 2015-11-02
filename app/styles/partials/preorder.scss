@@ -5,6 +5,12 @@
 
 .product{
   position: relative;
+  .min-height{
+    min-height: 65px;
+    &-large{
+      min-height: 185px;
+    }
+  }
   .hover-box{
     height: 360px;
     width: 360px;
