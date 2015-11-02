@@ -9,13 +9,13 @@ $("[data-hover~=change-image").hover(
   function() {
     $('.app-image').attr("src", $(this).data("image-src"));
   }, function() {
-    $('.app-image').attr("src", "images/home/phone-1.png");
+    $('.app-image').attr("src", $(this).data("image-init-src"));
   }
 );
 $("[data-hover~=change-format").hover(
   function() {
-    $(this).attr("src", $(this).data("image-src") + ".gif");
+    $(this).attr("src", $(this).data("image-hover-src"));
   }, function() {
-    $(this).attr("src", $(this).data("image-src") + ".jpg");
+    $(this).attr("src", $(this).data("image-orig-src"));
   }
 );
