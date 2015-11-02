@@ -106,33 +106,41 @@
     <div class="container-fluid">
       <section class="section row vertical-slideshow">
         <div class="v-wrapper">
-          <div class="slide slide-1">
-            <div class="col-sm-4 text-wrapper dark">
-              <h2 class="font-cardo-bold text-xlarge pull-right white-text" style="width: 80%;">
-                From timeless heirlooms to the latest trends, the Chronos disc makes it easy to upgrade the
-                timepieces you love with the tech you need.
-              </h2>
+          <div class="img-holder" data-image="images/home/vertical-1.jpg" data-width="1300" data-height="867">
+            <div class="slide">
+              <div class="col-sm-4 text-wrapper dark">
+                <h2 class="font-cardo-bold text-xlarge pull-right white-text" style="width: 80%;">
+                  From timeless heirlooms to the latest trends, the Chronos disc makes it easy to upgrade the
+                  timepieces you love with the tech you need.
+                </h2>
+              </div>
             </div>
           </div>
-          <div class="slide slide-2">
-            <div class="col-sm-4 text-wrapper light">
-              <h2 class="font-cardo-bold text-xlarge pull-right black-text" style="width: 80%;">
-                With the Chronos disc, you can track your steps, distance, stairs and active time without ever slowing down.
-              </h2>
+          <div class="img-holder" data-image="images/home/vertical-2.jpg" data-width="1300" data-height="867">
+            <div class="slide">
+              <div class="col-sm-4 text-wrapper light">
+                <h2 class="font-cardo-bold text-xlarge pull-right black-text" style="width: 80%;">
+                  With the Chronos disc, you can track your steps, distance, stairs and active time without ever slowing down.
+                </h2>
+              </div>
             </div>
           </div>
-          <div class="slide slide-3">
-            <div class="col-sm-4 text-wrapper dark">
-              <h2 class="font-cardo-bold text-xlarge pull-right white-text" style="width: 80%;">
-                A watch does more than tell time. It speaks to your taste, history, and personal identity.
-              </h2>
+          <div class="img-holder" data-image="images/home/vertical-3.jpg" data-width="1300" data-height="867">
+            <div class="slide">
+              <div class="col-sm-4 text-wrapper dark">
+                <h2 class="font-cardo-bold text-xlarge pull-right white-text" style="width: 80%;">
+                  A watch does more than tell time. It speaks to your taste, history, and personal identity.
+                </h2>
+              </div>
             </div>
           </div>
-          <div class="slide slide-4">
-            <div class="col-sm-4 text-wrapper light">
-              <h2 class="font-cardo-bold text-xlarge pull-right black-text" style="width: 80%;">
-                When you’re only getting notified of what matters, you can stay in the moment longer.
-              </h2>
+          <div class="img-holder" data-image="images/home/vertical-4.jpg" data-width="1300" data-height="867">
+            <div class="slide">
+              <div class="col-sm-4 text-wrapper light">
+                <h2 class="font-cardo-bold text-xlarge pull-right black-text" style="width: 80%;">
+                  When you’re only getting notified of what matters, you can stay in the moment longer.
+                </h2>
+              </div>
             </div>
           </div>
         </div>
@@ -333,6 +341,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src='/bower_components/jquery/dist/jquery.js'></script>
+    <script src='/bower_components/Parallax-ImageScroll/jquery.imageScroll.js'></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -358,6 +367,26 @@
     <!-- endbuild -->
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <script>
+      $('.img-holder').imageScroll({
+//            image: null,
+//            imageAttribute: 'image',
+//            container: $('body'),
+//            windowObject: $(window),
+//            speed:.2,
+//            coverRatio:.75,
+         coverRatio:1,
+           holderClass: 'vertical-slide'
+//            imgClass: 'img-holder-img',
+//            holderMinHeight: 200,
+//            holderMaxHeight: null,
+//            extraHeight: 50,
+//            mediaWidth: 1600,
+//            mediaHeight: 900,
+//            parallax: true,
+//            touch: false
+      });
+  </script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
