@@ -4,6 +4,7 @@
   border: 2px solid #000;
   width: 15px;
   height: 15px;
+
 }
 .carousel-indicators .active{
   background-color: #000;
@@ -13,6 +14,14 @@
   top: -1px;
 }
 
+#header-watch-carousel .carousel-indicators li{
+  position: relative;
+  top: 40px;
+}
+#header-watch-carousel .carousel-indicators .active{
+  position: relative;
+  top: 39px;
+}
 .carousel-control.right, .carousel-control.left{
   background-image: none;
   background-repeat: no-repeat;

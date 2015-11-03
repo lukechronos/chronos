@@ -12,14 +12,11 @@ $(function(){
     slideshowY = $('.vertical-slideshow').offset().top;
   }
 
-  if ($(window).width() < 960) {
+  if ($(window).width() > 758) {
     // Pull down hand in disc section
     $('.pull-down').each(function() {
       $(this).css('margin-top', $(this).parent().height()-$(this).height());
     });
-
-  }
-  else {
   }
 
 });
