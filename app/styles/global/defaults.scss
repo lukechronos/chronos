@@ -41,7 +41,12 @@ li.indent {
     padding-right: 25px;
   }
 }
-.min-height-100{min-height: 100px;}
+.min-height-100{
+  min-height: 100px;
+  @include respond-to(xs){
+    min-height: 0;
+  }
+}
 //Display
 .block{display: block;}
 .inline{display: inline;}
