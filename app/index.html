@@ -135,8 +135,55 @@
     </div>
     <div class="container-fluid">
       <section class="section row vertical-slideshow">
-         <div class="v-wrapper">
-           <div class="slide slide-3" name="boss">
+        <div id="cta-carousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#cta-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#cta-carousel" data-slide-to="1" class=""></li>
+            <li data-target="#cta-carousel" data-slide-to="2" class=""></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner hidden-sm hidden-xs" role="listbox">
+            <div class="item active slide slide-3" name="boss">
+              <div class="col-sm-4 text-wrapper dark">
+                <h2 class="font-open text-xlarge pull-right white-text line-height-150" style="width: 86%;">
+                  From timeless heirlooms to the latest trends, the Chronos disc makes it easy to upgrade the
+                  timepieces you love with the tech you need.
+                </h2>
+              </div>
+            </div>
+            <div class="item slide slide-2" name="addias">
+              <div class="col-sm-4 text-wrapper dark">
+                <h2 class="font-open text-xlarge pull-right white-text line-height-150" style="width: 86%;">
+                  With the Chronos disc, you can track your steps, distance, stairs and active time without ever slowing down.
+                </h2>
+              </div>
+            </div>
+            <div class="item slide slide-1" name="cartia">
+              <div class="col-sm-4 text-wrapper dark">
+                <h2 class="font-open text-xlarge pull-right white-text line-height-150" style="width: 86%;">
+                   When you’re only getting notified of what matters, you can stay in the moment longer.
+                </h2>
+              </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control hide" href="#cta-carousel" role="button" data-slide="prev">
+              <!-- <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+              <img src="images/home/carousel-left.png" alt="" />
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control hide" href="#cta-carousel" role="button" data-slide="next">
+              <!-- <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+              <img src="images/home/carousel-right.png" alt="" />
+              <span class="sr-only">Next</span>
+            </a>
+
+          </div>
+        </div>
+         <!-- <div class="v-wrapper">
+           <div class="hide slide slide-3" name="boss">
              <div class="col-sm-4 text-wrapper dark">
                <h2 class="font-open text-xlarge pull-right white-text line-height-150" style="width: 86%;">
                  From timeless heirlooms to the latest trends, the Chronos disc makes it easy to upgrade the
@@ -144,20 +191,20 @@
                </h2>
              </div>
            </div>
-           <div class="slide slide-2" name="adias">
+           <div class="hide slide slide-2" name="addias">
              <div class="col-sm-4 text-wrapper light">
                <h2 class="font-open text-xlarge pull-right black-text line-height-150" style="width: 86%;">
                  With the Chronos disc, you can track your steps, distance, stairs and active time without ever slowing down.
                </h2>
              </div>
            </div>
-           <div class="slide slide-1" name="cartia">
+           <div class="hide slide slide-1" name="cartia">
              <div class="col-sm-4 text-wrapper dark">
                <h2 class="font-open text-xlarge pull-right white-text line-height-150" style="width: 86%;">
                  When you’re only getting notified of what matters, you can stay in the moment longer.
                </h2>
              </div>
-           </div>
+           </div> -->
            <!-- <div class="slide slide-4" name="cartier">
              <div class="col-sm-4 text-wrapper light">
                <h2 class="font-open-bold text-xlarge pull-right black-text" style="width: 80%;">
@@ -165,7 +212,8 @@
                </h2>
              </div>
            </div> -->
-         </div>
+
+         <!-- </div> -->
        </section>
     </div>
     <div class="container">

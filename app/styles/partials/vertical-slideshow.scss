@@ -29,6 +29,12 @@
     &.slide-4{
       background-image: url("../images/home/vertical-4.jpg");
     }
+    .carousel-indicators li{
+      border: 2px solid #fff;
+    }
+    .carousel-indicators .active{
+      background-color: #fff;
+    }
 
   }
 }
