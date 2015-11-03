@@ -41,6 +41,7 @@ li.indent {
     padding-right: 25px;
   }
 }
+.min-height-100{min-height: 100px;}
 //Display
 .block{display: block;}
 .inline{display: inline;}
@@ -48,6 +49,7 @@ li.indent {
 
 //Sizing
 .full-width{width: 100%}
+.ninety-width{width: 90%}
 .three-quarter-width{width: 75%}
 .half-width{width: 50%}
 // Spacing
@@ -62,6 +64,7 @@ li.indent {
 .p-btm-20{padding-bottom: 20px;}
 .p-top-20{padding-top: 20px;}
 .p-btm-30{padding-bottom: 30px;}
+.p-btm-50{padding-bottom: 50px;}
 .p-btm-100{padding-bottom: 100px;}
 // Border
 .border-none{border:none;}
