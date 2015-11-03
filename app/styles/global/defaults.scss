@@ -45,14 +45,17 @@ li.indent {
 .block{display: block;}
 .inline{display: inline;}
 .inline-block{display: inline-block;}
+
 //Sizing
 .full-width{width: 100%}
+.three-quarter-width{width: 75%}
 .half-width{width: 50%}
 // Spacing
 .m-left-8{margin-left: 8px;}
 .m-right-8{margin-right: 8px;}
 .m-top-20{margin-top: 20px;}
 .m-btm-20{margin-bottom: 20px;}
+.m-btm-50{margin-bottom: 50px;}
 .m-top-50{margin-top: 50px;}
 
 .p-btm-10{padding-bottom: 10px;}
