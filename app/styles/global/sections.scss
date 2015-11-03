@@ -1,5 +1,15 @@
+@import "../_mixins.scss";
+
 section{
   &:not(.no-margin){
     margin-top: 50px;
+    @include respond-to(xs){
+      margin-top: 30px;
+    }
+  }
+  &.no-margin-xs{
+    @include respond-to(xs){
+      margin-top: 0px;
+    }
   }
 }

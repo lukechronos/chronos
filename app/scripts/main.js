@@ -11,11 +11,16 @@ $(function(){
   }else{
     slideshowY = $('.vertical-slideshow').offset().top;
   }
-  // Pull down hand in disc section
-  $('.pull-down').each(function() {
-    $(this).css('margin-top', $(this).parent().height()-$(this).height());
-  });
 
+  if ($(window).width() < 960) {
+    // Pull down hand in disc section
+    $('.pull-down').each(function() {
+      $(this).css('margin-top', $(this).parent().height()-$(this).height());
+    });
+
+  }
+  else {
+  }
 
 });
 
@@ -53,5 +58,7 @@ function stickyScroll(e) {
   }
 }
 
+if ($(window).width() > 960) {
+ window.addEventListener('scroll', stickyScroll, false);
+}
 // Scroll handler to toggle classes.
-window.addEventListener('scroll', stickyScroll, false);
