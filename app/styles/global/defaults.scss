@@ -82,18 +82,18 @@ li.indent {
 
 // Text
 .line-height-150{
+  line-height: 150%;
+  @include respond-to(xs){
+    line-height: 120%;
+  };
+}
+.line-height-200{
   line-height: 200%;
   @include respond-to(xs){
     line-height: 120%;
   };
 }
-.line-height-150{
-  line-height: 150%;
-  @include respond-to(xs){
-    line-height: 110%;
-  };
 
-}
 .uppercase{
   text-transform: uppercase;
 }
