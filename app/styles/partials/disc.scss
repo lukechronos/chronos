@@ -1,3 +1,22 @@
+@import "../_mixins.scss";
+
+.hand-container{
+  position: relative;
+}
 .hand-img{
   max-height: 550px;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  margin-left: -188px;
+  @include respond-to(md){
+    top: 275px;
+  }
+  @include respond-to(sm){
+    top: 215px;
+  }
+  @include respond-to(xs){
+    position: relative;
+    top: 0;
+  }
 }
