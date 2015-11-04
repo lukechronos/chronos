@@ -50,10 +50,35 @@
       min-height: 70px !important;
     }
   }
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (min-width: 751px) and (max-width: 1000px) {
     .product-content li{
       width: 29% !important;
       padding-bottom: 50px !important;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+    .preorder{
+      display: none;
+    }
+    .p-top-100{
+      padding-top: 30px !important;
+    }
+    .product-content li{
+      width: 49.5% !important;
+      padding-bottom: 50px !important;
+      img{
+        width: 100%;
+        margin: 0;
+      }
+      h2.font-montserrat-bold{
+        min-height: auto !important;
+      }
+      h2{
+        padding: 0;
+      }
+    }
+    .btn-small{
+      width: 150px;
     }
   }
 }

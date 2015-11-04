@@ -1,3 +1,5 @@
+@import "../_mixins.scss";
+
 .vertical-slideshow{
   position: relative;
   .slide{
@@ -8,6 +10,9 @@
     background-position: center center;
     .text-wrapper{
       height: 25%;
+      @include respond-to(xs){
+        height: 35%;
+      };
       padding-top: 50px;
       position: absolute;
       bottom: 0;
