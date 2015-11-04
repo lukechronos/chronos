@@ -1,16 +1,12 @@
 @import "../_mixins.scss";
-.disc-container{
+.app-container{
   position: relative;
 }
-.hand-container{
+.phone-container{
   position: absolute;
   bottom: 0;
   right: 0;
   @include respond-to(xs){
     position: relative;
   }
-
-}
-.hand-img{
-  max-height: 550px;
 }

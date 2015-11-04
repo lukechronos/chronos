@@ -12,11 +12,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "global/sections.scss";
 
 
+@import "partials/app.scss";
 @import "partials/carousel.scss";
 @import "partials/disc.scss";
 @import "partials/faq.scss";
 @import "partials/header.scss";
 @import "partials/marketing.scss";
-@import "partials/phones.scss";
 @import "partials/preorder.scss";
 @import "partials/vertical-slideshow.scss";
