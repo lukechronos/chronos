@@ -1,11 +1,7 @@
 @import "../_mixins.scss";
 .preorder{
-  padding-top: 200px;
-  padding-bottom: 130px;
-  @include respond-to(xs){
-    padding-top: 70px;
-    padding-bottom: 0px;
-  };
+  padding-top: 90px;
+  padding-bottom: 0px;
 }
 
 .product{

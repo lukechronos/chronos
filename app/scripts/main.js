@@ -55,7 +55,7 @@ function stickyScroll(e) {
   }
 }
 
-if ($(window).width() > 960) {
+if ($(window).width() > 960 && !$("body").hasClass("preorder-body")) {
  window.addEventListener('scroll', stickyScroll, false);
 }
 // Scroll handler to toggle classes.
