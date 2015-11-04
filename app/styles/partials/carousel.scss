@@ -1,4 +1,5 @@
 @import "../_variables.scss";
+@import "../_mixins.scss";
 
 .carousel-indicators li{
   border: 2px solid #000;
@@ -40,3 +41,19 @@
     opacity: 0.7;
   }
 }
+@include respond-to(md){
+  .carousel-inner > .item > img, .carousel-inner > .item > a > img{
+    max-width: 75%;
+    margin: 0 auto;
+  }
+};
+@include respond-to(sm){
+  #header-watch-carousel .carousel-indicators li{
+    position: relative;
+    top: 80px;
+  }
+  #header-watch-carousel .carousel-indicators .active{
+    position: relative;
+    top: 79px;
+  }
+};
