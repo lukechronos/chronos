@@ -40,3 +40,14 @@
     }
   }
 }
+
+.preorder-body{
+  @media only screen and (min-width: 900px) and (max-width: 1200px) {
+    .btn-small{
+      width: 160px;
+    }
+    h2.font-montserrat-bold{
+      min-height: 70px;
+    }
+  }
+}
