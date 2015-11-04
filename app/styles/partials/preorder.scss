@@ -42,12 +42,18 @@
 }
 
 .preorder-body{
-  @media only screen and (min-width: 900px) and (max-width: 1200px) {
+  @media only screen and (min-width: 1001px) and (max-width: 1200px) {
     .btn-small{
       width: 160px;
     }
     h2.font-montserrat-bold{
-      min-height: 70px;
+      min-height: 70px !important;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .product-content li{
+      width: 29% !important;
+      padding-bottom: 50px !important;
     }
   }
 }
