@@ -20,7 +20,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "partials/marketing.scss";
 @import "partials/preorder.scss";
 @import "partials/vertical-slideshow.scss";
-
 .savings{ 
 	display:block;
 	font-size:14px;
@@ -31,19 +30,33 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 }
 .product-content .product-content-text{
 	height:100px !important;
-}
-.product-content-text p{
-	font-size:14px !important;
-	padding-right:5px;
+	padding-right:20px !important;
 }
 .p-btm-40{
 	padding-bottom:40px;
 }
+.product-disabled{
+	opacity: 0.3 !important;
+}
 .p-top-40{
 	padding-top:40px !important;
+}
+.product-disabled .btn:hover{
+	background:black;
+	color:white;
 }
 .indicator_tabs li{
 	padding:10px 40px 10px 20px;
 	background: url('../images/nav/arrow.png') no-repeat;
 	background-position:  center right;
+}
+@media screen and (min-width: 1024px) {
+.home_header{
+	padding-left:120px;
+}
+}
+@media screen and (max-width: 1024px) {
+.home_header{
+	padding-left:10px;
+}
 }
