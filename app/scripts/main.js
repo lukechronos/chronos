@@ -4,6 +4,10 @@ var headerContainer = $(".header-container");
 var body = $("body");
 var headerHeight = headerContainer.height();
 var preorderButton = $(".header-container .preorder");
+var windowHeight = $(window).innerHeight();
+var verticalTopSlide = $('.vertical-slideshow').offset().top;
+var verticalSecondSlide = verticalTopSlide + windowHeight;
+var verticalThirdSlide = verticalSecondSlide + windowHeight;
 
 $(function(){
   if($("body").hasClass("preorder-body") || $("body").hasClass("about-body")){
@@ -55,7 +59,27 @@ function stickyScroll(e) {
   }
 }
 
+function verticalSlideShow(e){
+  if(window.pageYOffset > verticalTopSlide){
+    $('.vertical-slideshow').css("background", "red");
+  }else if (window.pageYOffset > verticalSecondSlide) {
+    $('.vertical-slideshow').css("background", "red");
+  }else if (window.pageYOffset > verticalThirdSlide) {
+    $('.vertical-slideshow').css("background", "red");
+  }else{
+    $('.vertical-slideshow').css("background", "red");
+  }
+}
+
+// Parallax
+// Meta
+// Mobile
+// Put it live
+
 if ($(window).width() > 960 && !$("body").hasClass("preorder-body")) {
  window.addEventListener('scroll', stickyScroll, false);
 }
-// Scroll handler to toggle classes.
+window.addEventListener('scroll', verticalSlideShow, false);
+
+// Developer
+// devin@wear
