@@ -21,7 +21,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "partials/preorder.scss";
 @import "partials/vertical-slideshow.scss";
 
-.savings{
+.savings{ 
 	display:block;
 	font-size:14px;
 	color:#999 !important;
@@ -43,7 +43,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 	padding-top:40px !important;
 }
 .indicator_tabs li{
-	padding:10px 40px 10px 0;
+	padding:10px 40px 10px 20px;
 	background: url('../images/nav/arrow.png') no-repeat;
 	background-position:  center right;
 }
