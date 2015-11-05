@@ -10,7 +10,7 @@ html, body{
 .text-large{
   font-size: $font-size-large;
   @include respond-to(xs){
-      font-size: 20px;
+      font-size: 16px;
   }
 }
 .text-medium{

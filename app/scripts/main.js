@@ -56,7 +56,6 @@ function stickyScroll(e) {
 
 
 // Parallax
-// Meta
 // Mobile
 // Put it live
 
@@ -69,6 +68,7 @@ if ($("body").hasClass("index-body")) {
   var $vcontainer = $('.vertical-slideshow-container');
   var $vslide = $('.vertical-slideshow');
   var verticalTopSlide = $vslide.offset().top;
+  var circlesContainerTop = $('.circles').offset().top;
   var verticalSecondSlide = verticalTopSlide + windowHeight * 2;
   var verticalThirdSlide = verticalSecondSlide + windowHeight * 2;
   var verticalThirdSlide = verticalSecondSlide + windowHeight * 2;
@@ -77,22 +77,24 @@ if ($("body").hasClass("index-body")) {
       interval: false
     });
   });
-  window.addEventListener('scroll', verticalSlideShow, false);
+  // window.addEventListener('scroll', verticalSlideShow, false);
 }
 
 function verticalSlideShow(e){
   if((window.pageYOffset > verticalTopSlide) && (window.pageYOffset < verticalTopSlide + windowHeight)){
-      $vslide.addClass("sticky");
-      $('#cta-carousel').carousel(0);
-  }else if ((window.pageYOffset > verticalTopSlide + windowHeight + 1) && (window.pageYOffset < verticalSecondSlide) ) {
-    $vslide.addClass("sticky");
+    $vcontainer.addClass("sticky");
+    $vcontainer.addClass("active");
+    $('#cta-carousel').carousel(0);
+  }else if ((window.pageYOffset > verticalTopSlide + windowHeight + 1) && (window.pageYOffset < verticalSecondSlide) && $vcontainer.hasClass("active")) {
+    $vcontainer.addClass("sticky");
     $('#cta-carousel').carousel(1);
-  }else if ((window.pageYOffset > verticalSecondSlide) && (window.pageYOffset < verticalSecondSlide + windowHeight))  {
-    $vslide.addClass("sticky");
+  }else if ((window.pageYOffset > verticalSecondSlide) && (window.pageYOffset < verticalSecondSlide + windowHeight) && $vcontainer.hasClass("active"))  {
+    $vcontainer.addClass("sticky");
     $('#cta-carousel').carousel(2);
   }else if (window.pageYOffset > verticalSecondSlide + windowHeight){
-    $vcontainer.css("min-height", "350vh");
-    $vslide.removeClass("sticky");
+    $vcontainer.removeClass("sticky");
+    $vcontainer.removeClass("active");
+    $(document).scrollTop(circlesContainerTop);
     $('#cta-carousel').carousel(0);
   }
 }
