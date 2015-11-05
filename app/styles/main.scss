@@ -20,3 +20,22 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "partials/marketing.scss";
 @import "partials/preorder.scss";
 @import "partials/vertical-slideshow.scss";
+
+.savings{
+	display:block;
+	font-size:14px;
+	color:#999 !important;
+}
+.product-content h2{
+	height:50px !important;
+}
+.product-content .product-content-text{
+	height:100px !important;
+}
+.product-content-text p{
+	font-size:14px !important;
+	padding-right:5px;
+}
+.p-btm-40{
+	padding-bottom:40px;
+}
