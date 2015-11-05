@@ -1,6 +1,11 @@
 @import "../_mixins.scss";
 .disc-container{
   position: relative;
+  li{
+    @include respond-to(xs){
+      margin-bottom: 15px;
+    }
+  }
 }
 .hand-container{
   position: absolute;
@@ -9,8 +14,10 @@
   @include respond-to(xs){
     position: relative;
   }
-
 }
 .hand-img{
   max-height: 550px;
+  @include respond-to(xs){
+    max-height: 400px;
+  }
 }
