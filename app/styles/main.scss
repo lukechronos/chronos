@@ -39,3 +39,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 .p-btm-40{
 	padding-bottom:40px;
 }
+.p-top-40{
+	padding-top:40px !important;
+}
+.indicator_tabs li{
+	padding:10px 40px 10px 0;
+	background: url('../images/nav/arrow.png') no-repeat;
+	background-position:  center right;
+}
