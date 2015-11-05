@@ -20,6 +20,15 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "partials/marketing.scss";
 @import "partials/preorder.scss";
 @import "partials/vertical-slideshow.scss";
+@font-face {
+  font-family: 'GothamBook';
+  src: url('../GothamBook/GothamBook.eot?#iefix') format('embedded-opentype'),  url('../GothamBook/GothamBook.woff') format('woff'), url('../GothamBook/GothamBook.ttf')  format('truetype'), url('../GothamBook/GothamBook.svg#GothamBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+	font-family:'GothamBook', 'HelveticaNeue', Arial !important;
+}
 .savings{ 
 	display:block;
 	font-size:14px;
