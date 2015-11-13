@@ -77,6 +77,7 @@ if ($("body").hasClass("index-body")) {
       interval: false
     });
   });
+  $('#cta-carousel').carousel();
   // window.addEventListener('scroll', verticalSlideShow, false);
 }
 
